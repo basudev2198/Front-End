@@ -1,0 +1,811 @@
+CSS Basics
+
+1. Add CSS comments in your CSS block.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="basics.css" />
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph. </p>
+  </body>
+</html>
+
+
+2. Create a page with different background-colour of a page and set an image as the background-image of a page (image should not scroll with the rest of the page and specify the size of a background image)
+
+ <!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="basics.css" />
+  </head>
+  <body>
+    <h1>The background-image Property</h1>
+  </body>
+</html>
+
+
+3. Create a different page with the width, style and colour of the 4 border-style (set different borders on each side with different patterns).
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {
+        border-style: groove;
+        border-width: 7px;
+        border-color: blueviolet;
+      }
+
+      div {
+        border-style: groove;
+        border-width: 7px;
+        border-colour: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>A Heading with a groove border</h1>
+
+    <div>A div element with a groove border. </div>
+  </body>
+</html>
+
+
+4. Develop a page and set the height:(in pixels and %) and width:(in pixels and %) on elements.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="basics.css" />
+    <style></style>
+  </head>
+  <body>
+    <h2>Successfully set the height and width of elements in px and %</h2>
+
+    <div>This div element has a height of 200px and a width of 50%. </div>
+  </body>
+</html>
+
+
+5. Develop a page with different font-styles, font-size, font-family, colours and text-align.
+
+<style type=”text/css”>
+. custom
+{
+	font-family: Courier;
+	colour: red;
+	font-size: 20px;
+}
+</style>
+
+
+CSS Page Adjustments
+	
+1. A page which specify a black border for table and if hover on it, page should change its colour.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="PA.css" />
+
+    <table>
+      
+      <tr style="--rowCount: 0px">
+        <td>One</td>
+        <td>Two</td>
+        <td>Three</td>
+      </tr>
+      <tr style="--rowCount: -1px">
+        <td>One</td>
+        <td>Two</td>
+        <td>Three</td>
+      </tr>
+      <tr style="--rowCount: -2px">
+        <td>One</td>
+        <td>Two</td>
+        <td>Three</td>
+      </tr>
+      <tr style="--rowCount: -3px">
+        <td>One</td>
+        <td>Two</td>
+        <td>Three</td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+
+2. Apply different visibility by an element (visibility: hidden, visible, collapse) and use different types of display for an element (display: none, inline, block, contents, list-item)
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h2.a {
+       
+        visibility: visible;
+      }
+
+      h2.b {
+        visibility: hidden;
+      }
+      tr.collapse {
+        visibility: collapse;
+      }
+      table,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Applying different visibility options</h1>
+
+    <h2 class="a">This heading is visible</h2>
+
+    <h2 class="b">This heading is hidden</h2>
+
+    <p>hidden heading still takes up space on the page</p>
+    <table>
+      <tr>
+        <td>K</td>
+        <td>Rahul</td>
+      </tr>
+      <tr class="collapse">
+        <td>Rahul</td>
+        <td>K</td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+
+3. A long page which should have two links "click to go to bottom of page" and "click to go to top of page”. Also set their scroll-behaviour to scroll smoothly.
+
+<!DOCTYPE html>
+<html id="top">
+  <body>
+    <div id="page-wrap">
+      <h1 id="top">Smooth Page Scrolling</h1>
+
+      <ul>
+        <li><a href="#three">Scroll to Bottom</a></li>
+      </ul>
+
+      <h2 id="one">Section One</h2>
+
+      <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
+        erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
+        sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+        facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
+        neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
+        volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
+        luctus, metus
+      </p>
+
+      <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
+        erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
+        sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+        facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
+        neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
+        volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
+        luctus, metus
+      </p>
+
+      <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
+        erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
+        sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+        facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
+        neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
+        volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
+        luctus, metus
+      </p>
+
+      <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
+        erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
+        sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+        facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
+        neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
+        volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
+        luctus, metus
+      </p>
+
+      <h2 id="two">Section Two</h2>
+
+      <p>
+        quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
+        libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper
+        pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
+        sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros
+        ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in
+        turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus
+        faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
+        Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+        facilisis luctus, metus
+      </p>
+
+      <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
+        erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
+        sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+        facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
+        neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
+        volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
+        luctus, metus
+      </p>
+
+      <h2 id="three">Section Three</h2>
+
+      <p>
+        quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
+        libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper
+        pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
+        sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros
+        ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in
+        turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus
+        faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
+        Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+        facilisis luctus, metus
+      </p>
+
+      <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
+        erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
+        sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+        facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
+        neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
+        volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
+        luctus, metus
+      </p>
+
+      <p>
+        quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
+        libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper
+        pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
+        sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros
+        ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in
+        turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus
+        faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
+        Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+        facilisis luctus, metus
+      </p>
+
+      <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
+        erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
+        sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+        facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
+        neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
+        volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
+        luctus, metus
+      </p>
+      <p><a href="#top">Go To Top</a></p>
+    </div>
+  </body>
+</html>
+
+
+4.	Add padding and margin with different size and understand the difference between them.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="PA.css" />
+
+  <body>
+    <div id="div-0">content (padding: 20px) </div>
+    <br />
+    <div id="div-1">content (padding-top: 20px) </div>
+    <br />
+    <div class="container">
+      <div class="child" id="div-2"> (margin: 20px 40px 60px;)</div>
+    </div>
+    <br />
+
+    <div class="container">
+      <div class="child" id="div-3">(margin:)</div>
+    </div>
+    <br />
+  </body>
+</html>
+
+
+5. A page with multiple background images for a webpage or element and define their adjustable sizes.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #example1 
+      {
+        background-image: url(http://static.demilked.com/wp-content/uploads/2018/03/5aaa1cb8ecce7-funny-weird-wtf-stock-photos-54-5a3bb0a19c729__700.jpg),
+          url(https://www.pngkit.com/png/detail/174-1747550_rainbow-light-png-grass.png);
+        background-position: right bottom, left top;
+        background-size: 300px 500px;
+        background-repeat: no-repeat, repeat;
+        padding: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Multiple Image Backgrounds with different sizes</h1>
+
+    <div id="example1">
+      <h1>Lorem Ipsum Dolour</h1>
+      <p>
+        Lorem ipsum dolour sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat.
+      </p>
+      <p>
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+  </body>
+</html>
+
+
+CSS Effects
+
+1. Apply CSS shadow effects like for image box and hover a cursor.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="effects.css" />
+  </head>
+  <body>
+    <div class="pic"></div>
+    <p style="font-size: 500%">
+      When hovering the picture's opacity changes and a neon green shadow is
+      added
+    </p>
+  </body>
+</html>
+
+
+2. Use CSS animations (name, duration, iteration-count & delay) and paginations (Hover able, with and without spaces).
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="effects.css" />
+
+    <div class="box"></div>
+    <br />
+    <h2>Animations and Paginations</h2>
+
+    <p>Hovering over numbers changes the colour</p>
+
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="#">1</a>
+      <a class="active" href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">&raquo;</a>
+    </div>
+  </body>
+</html>
+
+
+3. Add positions to CSS block (static, relative, fixed, absolute and sticky).
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="effects.css" />
+  </head>
+  <body>
+    <h2>Static</h2>
+    <p>
+      An element with position: static; is not positioned in any special way; it
+      is always positioned according to the normal flow of the page:
+    </p>
+
+    <div class="static">This div element has position: static;</div>
+
+    <h2>Relative</h2>
+    <p>
+      An element with position: relative; is positioned relative to its normal
+      position:
+    </p>
+
+    <div class="relative">This div element has position: relative;</div>
+
+    <h2>Fixed</h2>
+    <p>
+      An element with position: fixed; is positioned relative to the viewport,
+      which means it always stays in the same place even if the page is
+      scrolled:
+    </p>
+
+    <div class="fixed">Fixed</div>
+
+    <h2>Absolute;</h2>
+    <p>
+      An element with position: absolute; is positioned relative to the nearest
+      positioned ancestor (instead of positioned relative to the viewport, like
+      fixed):
+    </p>
+
+    <div class="relative">
+      This div element has position: relative;
+      <div class="absolute">This div element has position: absolute;</div>
+    </div>
+    <p>
+      Try to <b>scroll</b> inside this frame to understand how sticky
+      positioning works.
+    </p>
+
+    <div class="sticky">Sticky</div>
+    <div style="padding-bottom: 2000px">
+      <p>
+        In this example, the sticky element sticks to the top of the page (top:
+        0), when you reach its scroll position.
+      </p>
+      <p>Scroll back up to remove the stickiness. </p>
+      <p>
+        Some text to enable scrolling... Lorem ipsum dolour sit amet, illum
+        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
+        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+        molestiae voluptatibus.
+      </p>
+      <p>
+        Some text to enable scrolling... Lorem ipsum dolour sit amet, illum
+        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
+        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+        molestiae voluptatibus.
+      </p>
+    </div>
+  </body>
+</html>
+
+
+4. Handling Overflow using scroll.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="effects.css" />
+  </head>
+  <body>
+    <h1>Handling overflow property by using scroll</h1>
+
+    <div id="myDIV">
+      <div class="ex1">
+        Lorem ipsum dolour sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat.
+      </div>
+    </div>
+  </body>
+</html>
+
+
+5. Adding Opacity to an image.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="effects.css" />
+  </head>
+  <body>
+    <h1>Adding Opacity to Images</h1>
+    <p>Hover over the image to make it less opaque</p>
+    <img
+      src="https://images.all-free-download.com/images/graphiclarge/cat_cat_face_cats_eyes_240527.jpg"
+      alt="cat1"
+      width="170"
+      height="100"
+    />
+    <img
+      src="https://developer.ridgerun.com/wiki/images/8/80/Egyptian_cat.jpg"
+      alt="cats2"
+      width="170"
+      height="100"
+    />
+    <img
+      src="https://cdn.pixabay.com/photo/2015/11/16/22/14/cat-1046544__340.jpg"
+      alt="cats3"
+      width="170"
+      height="100"
+    />
+  </body>
+</html>
+
+
+CSS Compatibility
+
+1. Create a table and apply table-layout as fixed and none.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="compatibility.css" />
+  </head>
+  <body>
+    <h1>table-layout as fixed and none</h1>
+    <h2>table-layout: fixed; width: 180px:</h2>
+    <table class="b">
+      <tr>
+        <th>Lorem, ipsum. </th>
+        <th>Lorem, ipsum. </th>
+        <th>Lorem, ipsum. </th>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum dolour. </td>
+        <td>Lorem, ipsum dolour. </td>
+        <td>Lorem, ipsum dolour. </td>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum dolour. </td>
+        <td>Lorem, ipsum dolour. </td>
+        <td>Lorem, ipsum dolour. </td>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum dolour. </td>
+        <td>Lorem, ipsum dolour. </td>
+        <td>Lorem, ipsum dolour. </td>
+      </tr>
+    </table>
+
+    <h2>table-layout: auto; width: 100%:</h2>
+    <table class="c">
+      <tr>
+        <th>Lorem, ipsum. </th>
+        <th>Lorem, ipsum. </th>
+        <th>Lorem, ipsum. </th>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum dolour. </td>
+        <td>Lorem, ipsum dolour. </td>
+        <td>Lorem, ipsum dolour. </td>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum dolour. </td>
+        <td>Lorem, ipsum dolour. </td>
+        <td>Lorem, ipsum dolour. </td>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum dolour. </td>
+        <td>Lorem, ipsum dolour. </td>
+        <td>Lorem, ipsum dolour. </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+
+2. Create a list and change its list-style-type.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="compatibility.css" />
+  </head>
+  <body>
+    <h1>The list-style-type: ordered and unordered</h1>
+
+    <p>unordered lists:</p>
+
+    <ul class="a">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>
+
+    <ul class="b">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>
+
+    <p>ordered lists:</p>
+
+    <ol class="c">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ol>
+
+    <ol class="d">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ol>
+  </body>
+</html>
+
+
+3. Create a grid with of different types.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="compatibility.css" />
+  </head>
+  <body>
+    <h1>Grid types</h1>
+
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+    </div>
+  </body>
+</html>
+
+
+4. Create a hero image.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="compatibility.css" />
+
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>ASTON MARTIN</h1>
+        <p>F1 RACING TEAM</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+5. Write a program of viewport for grid, media queries, image, and video.
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="compatibility.css" />
+  </head>
+  <body>
+    <div class="header">
+      <! --this is header part of the page-->
+      <h1>JALA TECH</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-3 menu">
+        <ul>
+          <li>JAVA</li>
+          <! --there are links to other pages-->
+          <li>JAVASCRIPT</li>
+          <li>SQL</li>
+          <li>FRONT END</li>
+        </ul>
+      </div>
+
+      <div class="col-6">
+        <h1>About</h1>
+        <p>
+          Lorem ipsum dolour sit, amet consectetur adipisicing elit. Repellat eum
+          porro sint blanditiis nulla vero repellendus quaerat possimus
+          voluptate, quo itaque maiores ut in ipsa corrupti nobis amet ex cum
+          optio odit. Magnam expedita cum deserunt quos tenetur autem dolorum!
+        </p>
+        <img
+          src="https://thumbs.dreamstime.com/b/high-tech-technology-geometric-connection-system-background-digital-data-abstract-161592936.jpg"
+          width="460"
+          height="345"
+        /><! --this is the image source part-->
+      </div>
+      <video width="400" controls>
+        <source
+          src="https://www.w3schools.com/css/mov_bbb.mp4"
+          type="video/mp4"
+        />
+        <source src="mov_bbb.ogg" type="video/ogg" />
+        Your browser does not support HTML5 video. </video
+      ><! --this is the video source part -->
+
+      <div class="col-3 right">
+        <div class="aside">
+          <h2>UNLIMITED OPPORTUNITIES TO BUILD A RIGHT CAREER</h2>
+          <p>
+            We just don't focus to land you a job but strive to offer a
+            sustainable career.
+          </p>
+          <h2>FOR ALL EXPERIENCE PEOPLE</h2>
+          <p>
+            Yes, we help workers of all ages get a better-paying jobs, even if
+            they don't have higher education.
+          </p>
+          <h2>LIVING WITH A LACK OF JOB SECURITY? </h2>
+          <p>
+            Don't worry, in fact, this is an opportunity for you to see your
+            real potential.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <! --this is displayed at the bottom -->
+      <p>
+        Resize the browser window to see how the content respond to the
+        resizing.
+      </p>
+    </div>
+  </body>
+</html>
